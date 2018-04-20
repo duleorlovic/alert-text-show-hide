@@ -31,15 +31,13 @@ For Bootstrap you should override padding in case when there is empty message.
 
 ~~~
 .alert:empty {
-  // remove padding for empty messages
+  /* remove padding for empty messages */
   padding: 0px;
-  // when innerText is cleared somehow background and border remains
+  /* when innerText is cleared somehow background and border remains */
   background: none;
   border: none;
 }
 ~~~
-
-Read more in our [Documentation].
 
 ## Contributing
 
@@ -54,9 +52,8 @@ The gem is available as open source under the terms of the [MIT License](http://
 
 This project is designed and created at TRK INNOVATIONS llc by:
 
-* by [duleorlovic](https://github.com/duleorlovic)
+* [duleorlovic](https://github.com/duleorlovic)
 
 [Demo]: https://codepen.io/duleorlovic/pen/QrbqLo
-[Documentation]: http://actionpolicy.evilmartians.io
 [github.com/duleorlovic/alert-text-show-hide]: https://github.com/duleorlovic/alert-text-show-hide
 

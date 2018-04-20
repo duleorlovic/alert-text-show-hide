@@ -3,5 +3,7 @@
   "version": "1.0.1",
   "main": "index.js",
   "author": "Dusan Orlovic <duleorlovic@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://github.com/duleorlovic/alert-text-show-hide",
+  "repository": "github:duleorlovic/alert-text-show-hide"
 }
