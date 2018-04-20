@@ -12,9 +12,9 @@ var FLASH_DURATION = 5000;
 //   <%=raw "alertTextShowHide(document.getElementById('alert'), '#{j alert}');" if alert %>
 // </script>
 //
-function alertTextShowHide(element, message) {
+function alertTextShowHide(element, message, duration = FLASH_DURATION) {
   flash_appear(element, message);
-  setTimeout(function(){ flash_dissapear(element); }, FLASH_DURATION);
+  setTimeout(function(){ flash_dissapear(element); }, duration);
 }
 
 function flash_appear(element, message, i) {
