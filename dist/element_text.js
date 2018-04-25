@@ -85,39 +85,39 @@ return /******/ (function(modules) { // webpackBootstrap
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! exports provided: element_message */
+/*! exports provided: element_text */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "element_message", function() { return element_message; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "element_text", function() { return element_text; });
 var FLASH_LETTER_STEP = 10;
 var FLASH_DURATION = 5000;
 
-function element_message(element, message, duration = FLASH_DURATION) {
-  flash_appear(element, message);
+function element_text(element, text, duration = FLASH_DURATION) {
+  flash_appear(element, text);
   setTimeout(function(){ flash_dissapear(element); }, duration);
 }
 
-function flash_appear(element, message, i) {
+function flash_appear(element, text, i) {
   if (i == undefined)
     i = 0;
-  element.innerText = message.substring(0,i);
+  element.innerText = text.substring(0,i);
   setTimeout(function(){
-    if (i<message.length)
-      flash_appear(element, message, i+1);
+    if (i<text.length)
+      flash_appear(element, text, i+1);
   }, FLASH_LETTER_STEP);
 }
 
-function flash_dissapear(element, message, i) {
-  if (message == undefined)
-    message = element.innerText;
+function flash_dissapear(element, text, i) {
+  if (text == undefined)
+    text = element.innerText;
   if (i == undefined)
-    i = message.length-1;
-  element.innerText = message.substring(0,i);
+    i = text.length-1;
+  element.innerText = text.substring(0,i);
   setTimeout(function(){
     if (i>0)
-      flash_dissapear(element, message,i-1);
+      flash_dissapear(element, text, i-1);
   }, FLASH_LETTER_STEP);
 }
 
@@ -126,4 +126,4 @@ function flash_dissapear(element, message, i) {
 
 /******/ });
 });
-//# sourceMappingURL=element_message.js.map
+//# sourceMappingURL=element_text.js.map

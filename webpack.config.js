@@ -3,7 +3,7 @@ const config = {
   entry: __dirname + '/src/index.js',
   devtool: 'source-map',
   output: {
-    filename: 'element_message.js',
+    filename: 'element_text.js',
     library: 'alertMessageShowHide',
     libraryTarget: 'umd',
     umdNamedDefine: true,

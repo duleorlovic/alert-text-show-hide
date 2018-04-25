@@ -4,11 +4,18 @@ Show and hide any alert text [Demo].
 
 ## Installation
 
-You can include as a module (UMD) or with a script tag so you you can access
-global object `alertTextShowHide`.
+You can include as a module (UMD) from npm package
+https://www.npmjs.com/package/alert-text-show-hide
 
 ~~~
-<script src="./dist/element_message.js"></script>
+npm install alert-text-show-hide
+~~~
+
+You can use github cdn and include with a script tag and use global object
+`alertTextShowHide` on some element and text.
+
+~~~
+<script src="./dist/element_text.js"></script>
 ~~~
 
 It needs element id and text which needs to be shown.
