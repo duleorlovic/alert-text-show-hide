@@ -1,9 +1,17 @@
 {
   "name": "alert-text-show-hide",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "main": "index.js",
   "author": "Dusan Orlovic <duleorlovic@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/duleorlovic/alert-text-show-hide",
-  "repository": "github:duleorlovic/alert-text-show-hide"
+  "repository": "github:duleorlovic/alert-text-show-hide",
+  "scripts": {
+    "build": "WEBPACK_ENV=development webpack",
+    "dev": "WEBPACK_ENV=developmentebpack --progress --colors --watch"
+  },
+  "devDependencies": {
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15"
+  }
 }

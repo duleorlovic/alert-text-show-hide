@@ -1,15 +1,25 @@
 # Alert Text Show Hide
 
 Show and hide any alert text [Demo].
+
+## Installation
+
+You can include as a module (UMD) or with a script tag so you you can access
+global object `alertTextShowHide`.
+
+~~~
+<script src="./dist/element_message.js"></script>
+~~~
+
 It needs element id and text which needs to be shown.
 
 ~~~
 let el = document.getElementById('notice')
 let text = 'This is my notice'
-alertTextShowHide(el, text)
+alertTextShowHide.element_text(el, text)
 
 // or in one line
-alertTextShowHide(document.getElementById('notice'), 'This is my notice');
+alertTextShowHide.element_text(document.getElementById('notice'), 'This is my notice');
 ~~~
 
 Styling of alerts and notices is completelly on your side. This just show and
@@ -22,8 +32,8 @@ hide text inside it.
 <span class="alert alert-info" id="notice"></span>
 <span class="alert alert-danger" id="alert"></span>
 <script>
-  <%=raw "alertTextShowHide(document.getElementById('notice'), '#{j notice}', 10000);" if notice %>
-  <%=raw "alertTextShowHide(document.getElementById('alert'), '#{j alert}', 10000);" if alert %>
+  <%=raw "alertTextShowHide.element_text(document.getElementById('notice'), '#{j notice}', 10000);" if notice %>
+  <%=raw "alertTextShowHide.element_text(document.getElementById('alert'), '#{j alert}', 10000);" if alert %>
 </script>
 ~~~
 
