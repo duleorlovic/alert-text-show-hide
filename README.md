@@ -56,6 +56,16 @@ For Bootstrap you should override padding in case when there is empty message.
 }
 ~~~
 
+## Develop
+
+~~~
+npm run build
+git add .
+vi package.json # increase version
+git commit -m 'Fix something'
+npm publish
+~~~
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at

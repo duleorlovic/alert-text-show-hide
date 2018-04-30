@@ -1,6 +1,6 @@
 {
   "name": "alert-text-show-hide",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "main": "dist/element_text.js",
   "author": "Dusan Orlovic <duleorlovic@gmail.com>",
   "license": "MIT",

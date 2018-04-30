@@ -94,7 +94,8 @@ __webpack_require__.r(__webpack_exports__);
 var FLASH_LETTER_STEP = 10;
 var FLASH_DURATION = 5000;
 
-function element_text(element, text, duration = FLASH_DURATION) {
+function element_text(element, text, duration) {
+  duration = duration || FLASH_DURATION;
   flash_appear(element, text);
   setTimeout(function(){ flash_dissapear(element); }, duration);
 }
