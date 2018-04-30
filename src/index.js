@@ -1,7 +1,8 @@
 var FLASH_LETTER_STEP = 10;
 var FLASH_DURATION = 5000;
 
-export function element_text(element, text, duration = FLASH_DURATION) {
+export function element_text(element, text, duration) {
+  duration = duration || FLASH_DURATION;
   flash_appear(element, text);
   setTimeout(function(){ flash_dissapear(element); }, duration);
 }
