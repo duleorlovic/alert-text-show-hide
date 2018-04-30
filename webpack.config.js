@@ -4,7 +4,7 @@ const config = {
   devtool: 'source-map',
   output: {
     filename: 'element_text.js',
-    library: 'alertMessageShowHide',
+    library: 'alertTextShowHide',
     libraryTarget: 'umd',
     umdNamedDefine: true,
   }

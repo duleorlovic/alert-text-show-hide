@@ -2,11 +2,11 @@
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
 	else if(typeof define === 'function' && define.amd)
-		define("alertMessageShowHide", [], factory);
+		define("alertTextShowHide", [], factory);
 	else if(typeof exports === 'object')
-		exports["alertMessageShowHide"] = factory();
+		exports["alertTextShowHide"] = factory();
 	else
-		root["alertMessageShowHide"] = factory();
+		root["alertTextShowHide"] = factory();
 })(window, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
