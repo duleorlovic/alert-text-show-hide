@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <script src="./element_text.js"></script>
+  </head>
+  <body>
+    <div id='notice'></div>
+    <div id='slow-notice'></div>
+    <script>
+      let notice = document.getElementById('notice')
+      let text = 'This is my notice'
+      alertTextShowHide.element_text(notice, text)
+
+      let slowNotice = document.getElementById('slow-notice')
+      let slowText = 'This,is,my,slow,notice'
+      alertTextShowHide.element_text(slowNotice, slowText, 10000, 2000, ',')
+    </script>
+  </body>
+</html>

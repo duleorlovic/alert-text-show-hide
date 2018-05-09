@@ -60,8 +60,15 @@ For Bootstrap you should override padding in case when there is empty message.
 
 ~~~
 npm run build
-git add .
+gnome-open dist/index.html
+~~~
+
+Add new version with
+
+~~~
+npm run build
 vi package.json # increase version
+git add .
 git commit -m 'Fix something'
 npm publish
 ~~~
