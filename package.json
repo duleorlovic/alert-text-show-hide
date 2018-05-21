@@ -1,6 +1,6 @@
 {
   "name": "alert-text-show-hide",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "main": "dist/element_text.js",
   "author": "Dusan Orlovic <duleorlovic@gmail.com>",
   "license": "MIT",
@@ -8,9 +8,12 @@
   "repository": "github:duleorlovic/alert-text-show-hide",
   "scripts": {
     "build": "WEBPACK_ENV=development webpack",
-    "dev": "WEBPACK_ENV=developmentebpack --progress --colors --watch"
+    "dev": "WEBPACK_ENV=developmentebpack --progress --colors --watch",
+    "test": "mocha"
   },
   "devDependencies": {
+    "mocha": "^5.2.0",
+    "sinon": "^5.0.7",
     "webpack": "^4.6.0",
     "webpack-cli": "^2.0.15"
   }

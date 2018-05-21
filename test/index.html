@@ -1,11 +1,13 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <script src="./element_text.js"></script>
+    <script src="../dist/element_text.js"></script>
   </head>
   <body>
     <div id='notice'></div>
     <div id='slow-notice'></div>
+    <div id='notice-with-tags'></div>
+    <span>dist/index.html</span>
     <script>
       let notice = document.getElementById('notice')
       let text = 'This is my notice'
@@ -14,6 +16,11 @@
       let slowNotice = document.getElementById('slow-notice')
       let slowText = 'This,is,my,slow,notice'
       alertTextShowHide.element_text(slowNotice, slowText, 10000, 2000, ',')
+
+      let noticeWithTags = document.getElementById('notice-with-tags')
+      let tagsText = "<span style='color: red'>This is my red notice</span>,\
+                      This is my notice with a <a href='http://trk.in.rs'>link</a>"
+      alertTextShowHide.element_text(noticeWithTags, tagsText, 5000, 500, ',')
     </script>
   </body>
 </html>

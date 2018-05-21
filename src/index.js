@@ -10,7 +10,7 @@ export function element_text(element, text, duration, letter_duration, letter_bo
 
 function flash_appear(element, text, i, letter_duration, letter_bound) {
   if (i <= text.length) {
-    element.innerText = text.substring(0, i);
+    element.innerHTML = text.substring(0, i);
     setTimeout(function(){
       var jump = 1;
       if (letter_bound) {
@@ -24,17 +24,17 @@ function flash_appear(element, text, i, letter_duration, letter_bound) {
       flash_appear(element, text, i + jump, letter_duration, letter_bound);
     }, letter_duration);
   } else {
-    element.innerText = text;
+    element.innerHTML = text;
   }
 }
 
 function flash_dissapear(element, text, i, letter_duration, letter_bound) {
   if (text == undefined)
-    text = element.innerText;
+    text = element.innerHTML;
   if (i == undefined)
     i = text.length-1;
   if (i > 0) {
-    element.innerText = text.substring(0, i);
+    element.innerHTML = text.substring(0, i);
     setTimeout(function(){
       var jump = 1;
       if (letter_bound) {
@@ -48,6 +48,6 @@ function flash_dissapear(element, text, i, letter_duration, letter_bound) {
       flash_dissapear(element, text, i - jump, letter_duration, letter_bound);
     }, letter_duration);
   } else {
-    element.innerText = '';
+    element.innerHTML = '';
   }
 }
